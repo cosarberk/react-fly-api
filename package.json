@@ -1,0 +1,57 @@
+{
+  "name": "react-fly-api",
+  "version": "1.0.13",
+  "description": "Fast communication system based on Axios and React Query for React",
+  "main": "dist/react-fly-api.umd.js",
+  "module": "dist/react-fly-api.es.js",
+  "types": "dist/src/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "sudo rm -rf dist && vite build",
+    "dev": "vite",
+    "prepublishOnly": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cosarberk/react-fly-api.git"
+  },
+  "peerDependencies": {
+    "@tanstack/react-query": "^5.65.1",
+    "axios": "^1.0.0",
+    "react": ">=17.0.0",
+    "react-dom": ">=17.0.0"
+  },
+  "peerDependenciesMeta": {
+    "react": {
+      "optional": true
+    },
+    "react-dom": {
+      "optional": true
+    }
+  },
+  "keywords": [
+    "react-fly-api",
+    "react-query",
+    "axios",
+    "api",
+    "reastapi"
+  ],
+  "author": "Berk Coşar <lookmainpoint@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cosarberk/react-fly-api/issues"
+  },
+  "homepage": "https://github.com/cosarberk/react-fly-api#readme",
+  "dependencies": {
+    "@tanstack/react-query": "^5.65.1",
+    "axios": "^1.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.0.8",
+    "typescript": "^5.7.3",
+    "vite": "^6.0.11",
+    "vite-plugin-dts": "^4.5.0"
+  }
+}
